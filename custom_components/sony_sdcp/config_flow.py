@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-import pysdcp
+import pysdcp_extended
 import voluptuous as vol
 
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
@@ -36,7 +36,7 @@ class SonySDCPConfigFlow(ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             try:
-                projector = pysdcp.Projector(user_input[CONF_HOST])
+                projector = pysdcp_extended.Projector(user_input[CONF_HOST])
                 await self.hass.async_add_executor_job(projector.get_power)
             except Exception:
                 errors["base"] = "cannot_connect"

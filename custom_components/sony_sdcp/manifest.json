@@ -5,8 +5,8 @@
   "codeowners": [],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/Galala7/pySDCP",
+  "documentation": "https://github.com/kennymc-c/pySDCP-extended",
   "integration_type": "hub",
   "iot_class": "local_polling",
-  "requirements": ["pySDCP==1"]
+  "requirements": ["pysdcp-extended==0.2.0"]
 }
