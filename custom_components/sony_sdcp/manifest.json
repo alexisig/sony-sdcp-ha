@@ -1,0 +1,12 @@
+{
+  "domain": "sony_sdcp",
+  "name": "Sony SDCP",
+  "version": "1.0.0",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Galala7/pySDCP",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "requirements": ["pySDCP==1"]
+}

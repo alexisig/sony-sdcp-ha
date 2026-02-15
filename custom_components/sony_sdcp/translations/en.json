@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sony SDCP",
+        "description": "Configure your Sony projector.",
+        "data": {
+          "host": "IP Address",
+          "name": "Name"
+        },
+        "data_description": {
+          "host": "IP address of the Sony projector on your local network.",
+          "name": "A name to identify this projector."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect. Check the IP address and make sure the projector is reachable.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This projector is already configured."
+    }
+  }
+}
